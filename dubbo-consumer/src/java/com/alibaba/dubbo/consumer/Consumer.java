@@ -9,7 +9,7 @@ public class Consumer {
         ClassPathXmlApplicationContext context =
                 new ClassPathXmlApplicationContext("consumer.xml");
         context.start();
-        System.out.println("consumer start");
+        System.out.println("消费者1启动");
         DemoService demoService = context.getBean(DemoService.class);
         System.out.println("consumer");
         System.out.println(demoService.getPermissions(1L));
